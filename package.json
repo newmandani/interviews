@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@types/react": "^16.9.45",
+    "@types/react-dom": "^16.9.8",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "tslib": "^2.0.1"
+  }
+}

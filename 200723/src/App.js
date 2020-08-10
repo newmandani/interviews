@@ -1,32 +1,5 @@
 import React, { useState } from "react";
-import * as NewsComponents from "./components/NewsComponents";
+import { Main } from "./pages/Main";
 import "./App.scss";
 
-const App = () => {
-  const [articles, setArticles] = useState();
-  const [firstArticle, setFirstArticle] = useState();
-
-  const setFirst = (article) => {
-    return setFirstArticle(article);
-  };
-
-  return (
-    <>
-      <NewsComponents.SearchBar
-        setArticles={setArticles}
-        setFirstArticle={setFirstArticle}
-      />
-      {articles && (
-        <div className="app-style">
-          <NewsComponents.ArticlesList
-            collection={articles}
-            setFirst={setFirst}
-          />
-          <NewsComponents.FirstArticle collection={firstArticle} />
-        </div>
-      )}
-    </>
-  );
-};
-
-export default App;
+export const App = () => <Main />;
