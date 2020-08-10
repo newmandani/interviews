@@ -18,6 +18,7 @@ export interface ArticleData {
     name: Text;
   };
   content: Text;
+  urlToImage: string;
 }
 
 export const ArticlesList: React.FC<any> = (props: ArticlesListProps) => {
