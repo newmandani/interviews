@@ -1,7 +1,9 @@
 import React from "react";
 import "./ArticlesList.scss";
 
-export const ArticlesList = (props) => {
+type ArticleListProps = {};
+
+export const ArticlesList: React.FC = (props: any) => {
   const { collection, setFirst } = props;
   const setFirstArticle = (article) => setFirst(article);
 

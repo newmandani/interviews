@@ -6,5 +6,6 @@
     "jsx": "react"
   },
   "include": ["src"],
+  "exclude": [],
   "compileOnSave": false
 }
