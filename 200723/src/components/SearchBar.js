@@ -3,7 +3,7 @@ import axios from "axios";
 import "./SearchBar.scss";
 import { NEWS_API_KEY } from "../constants/constants";
 
-async function newSearch(props) {
+const newSearch = async (props) => {
   const { query, setArticles, setFirstArticle } = props;
 
   await axios
@@ -21,9 +21,9 @@ async function newSearch(props) {
     .catch((error) => {
       console.log(error);
     });
-}
+};
 
-function SearchBar(props) {
+const SearchBar = (props) => {
   const { setArticles, setFirstArticle } = props;
 
   return (
@@ -37,6 +37,6 @@ function SearchBar(props) {
       />
     </div>
   );
-}
+};
 
 export default SearchBar;

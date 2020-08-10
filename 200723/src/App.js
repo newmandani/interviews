@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import * as NewsComponents from "./components/NewsComponents";
 import "./App.scss";
 
-function App() {
+const App = () => {
   const [articles, setArticles] = useState();
   const [firstArticle, setFirstArticle] = useState();
 
-  function setFirst(article) {
-    setFirstArticle(article);
-  }
+  const setFirst = (article) => {
+    return setFirstArticle(article);
+  };
 
   return (
     <>
@@ -27,6 +27,6 @@ function App() {
       )}
     </>
   );
-}
+};
 
 export default App;

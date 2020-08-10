@@ -1,7 +1,7 @@
 import React from "react";
 import "./FirstArticle.scss";
 
-function FirstArticle(props) {
+const FirstArticle = (props) => {
   const { title, source, urlToImage, content } = props.collection
     ? props.collection
     : {};
@@ -14,6 +14,6 @@ function FirstArticle(props) {
       <p>{content}</p>
     </div>
   ) : null;
-}
+};
 
 export default FirstArticle;

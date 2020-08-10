@@ -1,7 +1,7 @@
 import React from "react";
 import "./ArticlesList.scss";
 
-function ArticlesList(props) {
+const ArticlesList = (props) => {
   const { collection, setFirst } = props;
   const setFirstArticle = (article) => setFirst(article);
 
@@ -18,6 +18,6 @@ function ArticlesList(props) {
         : null}
     </div>
   );
-}
+};
 
 export default ArticlesList;
